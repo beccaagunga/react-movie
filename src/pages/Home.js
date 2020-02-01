@@ -50,12 +50,13 @@ class Home extends Component {
 
   loadMoreItems = () => {
     const {searchTerm, currentPage } = this.state;
+
     let endpoint = '';
     this.setState({ loading: true })
     if (searchTerm === '') {
-      endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=em-Us&page=${this.state.currentPage + 1}`
+      endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=em-Us&page=${this.state.currentPage + 1}`;
     } else {
-      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=em-US&query=${this.state.searchTerm}&page=${this.state.currentPage + 1}`
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=em-US&query=${this.state.searchTerm}&page=${this.state.currentPage + 1}`;
     }
     this.fetchItems(endpoint);
   }
@@ -74,6 +75,7 @@ class Home extends Component {
         currentPage: result.page,
         totalPages: result.total_pages
       }, () => {
+        // Remember state for the next mount if we're not in search view
         if (searchTerm === "") {
           sessionStorage.setItem('HomeState', JSON.stringify(this.state));
         }
@@ -99,7 +101,7 @@ class Home extends Component {
         <div className="rmdb-home-grid">
           <Grid
             header={searchTerm ? 'Search Result' : 'Popular Movies'}
-            loading={loading}
+            loading={ loading }
           >
           {movies.map( (element, i) => (
            <MovieThumb
@@ -113,7 +115,7 @@ class Home extends Component {
           </Grid>
           {loading ? <Spinner /> : null}
           {(currentPage <= totalPages && !loading) ?
-          <Load text='Load More' onClick={this.loadMoreItems} />
+          <Load text='LOAD MORE' onClick={this.loadMoreItems} />
           : null
         }
         </div>

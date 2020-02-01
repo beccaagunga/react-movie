@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css';
-import rmdbLogo from '../images/reactMovie_logo.png'
+import rmdbLogo from '../images/rm-logo.jpg'
 import tmdbLogo from '../images/tmdb_logo.png'
 import { Link } from 'react-router-dom';
 

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Hero from './components/Hero';
 import NotFound from './components/NotFound';
 import Movie from './pages/Movie';
+import Load from './components/Load';
 
 function App() {
   return (
