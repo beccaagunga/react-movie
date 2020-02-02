@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Header/Header.css';
-import rmdbLogo from '../images/rm-logo.jpg'
-import tmdbLogo from '../images/tmdb_logo.png'
+import './Header.css';
+import rmdbLogo from '../../images/rm-logo.jpg'
+import tmdbLogo from '../../images/tmdb_logo.png'
 import { Link } from 'react-router-dom';
 
 
@@ -21,11 +21,13 @@ class Header extends Component {
             alt="logo"
           />
           </Link>
+          <Link to="/">
           <img
             className="tmdb-logo"
             src= { tmdbLogo }
             alt="logo"
           />
+          </Link>
         </div>
       </div>
     );

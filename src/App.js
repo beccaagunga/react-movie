@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
 import Home from './pages/Home';
+import Movie from './pages/Movie';
 import Hero from './components/Hero/Hero';
 import NotFound from './components/NotFound/NotFound';
-import Movie from './pages/Movie';
+import Header from './components/Header/Header';
 import Load from './components/Load/Load';
 
 function App() {

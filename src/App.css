@@ -24,65 +24,18 @@
 
 
 /* MOVIE PAGES */
-.rmdb-movie {
+.movie {
   margin-bottom: 100px;
 }
 
-.rmdb-movie h1 {
-  margin-bottom: 100px;
+.movie h1 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.rmdb-movie-grid {
+.movie-grid {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-
-
-
-
-
-
-
-
-
-/* ACTOR*/
-.rmdb-actor {
-  height: auto;
-  min-height: 30px;
-  background: #1c1c1c;
-  border-radius: 20px;
-  padding: 25px;
-  text-align: center;
-}
-
-.rmdb-actor img {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 0 auto;
-
-}
-
-.rmdb-actor-name {
-  display: block;
-  font-family: 'Abel', sans-serif;
-  font-size: 22px;
-  color:#fff;
-  box-sizing: border-box;
-  margin: 20px 0 0 0;
-}
-
-.rmdb-actor-character {
-  display: block;
-  font-family: 'Abel', sans-serif;
-  font-size: 18px;
-  color:#fff;
-
-
-  box-sizing: border-box;
 }

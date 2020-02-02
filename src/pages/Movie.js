@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../App.css';
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../config.js'
 import Nav from '../components/Nav/Nav';
-import MovieInfo from '../components/MovieInfo';
-import MovieInfoBar from '../components/MovieInfoBar';
-import Actor from '../components/Actor';
+import MovieInfo from '../components/MovieInfo/MovieInfo';
+import MovieInfoBar from '../components/MovieInfoBar/MovieInfoBar';
+import Actor from '../components/Actor/Actor';
 import Grid from '../components/Grid/Grid';
 import Spinner from '../components/Spinner/Spinner';
 
@@ -52,7 +52,7 @@ class Movie extends Component {
 
   render() {
     return (
-      <div className="rmdb-movie">
+      <div className="movie">
         {this.state.movie ?
         <div>
           <Nav movie={this.props.location.movieName} />
@@ -65,7 +65,7 @@ class Movie extends Component {
         </div>
     : null }
     {this.state.actors ?
-    <div className="rmdb-movie-grid">
+    <div className="movie-grid">
       <Grid header={'Actors'}>
         {this.state.actors.map( (element, i) => {
           return <Actor key={1} actor={element} />
