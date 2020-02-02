@@ -1,11 +1,11 @@
 import React from 'react';
-import '../App.css';
+import './Nav.css';
 import { Link } from 'react-router-dom';
 
 const Nav = (props) => {
   return (
-    <div className="rmdb-navigation">
-    <div className="rmdb-navigation-content">
+    <div className="navigation">
+    <div className="navigation-content">
       <Link to="/">
         <p>Home</p>
       </Link>

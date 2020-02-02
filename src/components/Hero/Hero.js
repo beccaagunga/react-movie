@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../App.css';
+import './Hero.css';
 
 const HeroImage = ({ image, title, text }) => (
-  <div className="rmdb-heroimage"
+  <div className="heroimage"
     style={{
       background:
         `linear-gradient(to bottom, rgba(0,0,0,0)
@@ -13,8 +13,8 @@ const HeroImage = ({ image, title, text }) => (
         url('${image}'), #1c1c1c`
     }}
   >
-    <div className="rmdb-heroimage-content">
-      <div className="rmdb-heroimage-text">
+    <div className="heroimage-content">
+      <div className="heroimage-text">
         <h1>{title}</h1>
         <p>{text}</p>
       </div>

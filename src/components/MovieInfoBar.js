@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import FontAwesome from 'react-fontawesome';
-import MovieThumb from '../components/MovieThumb';
+import MovieThumb from '../components/MovieThumb/MovieThumb';
 import { calcTime, convertMoney } from '../helpers.js'
 
 

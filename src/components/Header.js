@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../App.css';
+import './Header/Header.css';
 import rmdbLogo from '../images/rm-logo.jpg'
 import tmdbLogo from '../images/tmdb_logo.png'
 import { Link } from 'react-router-dom';
@@ -12,8 +12,8 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="rmdb-header">
-        <div className="rmdb-header-content">
+      <div className="header">
+        <div className="header-content">
         <Link to="/">
           <img
             className="rmdb-logo"

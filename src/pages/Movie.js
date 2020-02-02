@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../config.js'
-import Nav from '../components/Nav';
+import Nav from '../components/Nav/Nav';
 import MovieInfo from '../components/MovieInfo';
 import MovieInfoBar from '../components/MovieInfoBar';
 import Actor from '../components/Actor';
-import Grid from '../components/Grid';
-import Spinner from '../components/Spinner';
+import Grid from '../components/Grid/Grid';
+import Spinner from '../components/Spinner/Spinner';
 
 
 class Movie extends Component {
@@ -75,7 +75,6 @@ class Movie extends Component {
       : null }
       {!this.state.actors && !this.state.loading ? <h1>No Movie Found</h1> : null}
       {this.state.loading ? <Spinner /> : null}
-  }
   </div>
 )
 }

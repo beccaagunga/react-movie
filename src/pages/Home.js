@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import '../App.css';
-import Hero from '../components/Hero';
-import SearchBar from '../components/SearchBar';
-import Grid from '../components/Grid';
-import MovieThumb from '../components/MovieThumb';
-import Load from '../components/Load';
-import Spinner from '../components/Spinner';
+import Hero from '../components/Hero/Hero';
+import SearchBar from '../components/SearchBar/SearchBar';
+import Grid from '../components/Grid/Grid';
+import MovieThumb from '../components/MovieThumb/MovieThumb';
+import Load from '../components/Load/Load';
+import Spinner from '../components/Spinner/Spinner';
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../config.js'
 
 
@@ -88,7 +88,7 @@ class Home extends Component {
     const { movies, heroImage, loading, currentPage, totalPages, searchTerm} = this.state;
 
     return (
-      <div className="rmdb-home">
+      <div className="homepage">
       {heroImage ?
       <div>
         <Hero
@@ -98,7 +98,7 @@ class Home extends Component {
         />
           <SearchBar callback={this.searchItems} />
       </div> : null }
-        <div className="rmdb-home-grid">
+        <div className="home-grid">
           <Grid
             header={searchTerm ? 'Search Result' : 'Popular Movies'}
             loading={ loading }

@@ -1,9 +1,9 @@
 import React from 'react';
-import '../App.css';
+import './MovieInfo/MovieInfo.css';
 import { Link } from 'react-router-dom';
 import { IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../config.js'
 import FontAwesome from 'react-fontawesome';
-import MovieThumb from '../components/MovieThumb';
+import MovieThumb from '../components/MovieThumb/MovieThumb';
 
 const MovieInfo = (props, movie, directors) => (
   <div className="rmdb-movieinfo"

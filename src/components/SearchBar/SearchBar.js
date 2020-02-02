@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import '../App.css';
-import FontAwesome from 'react-fontawesome';
+import './SearchBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from 'prop-types';
 
 class SearchBar extends Component {
@@ -22,12 +23,12 @@ class SearchBar extends Component {
   render() {
     const { value } = this.state;
     return (
-      <div className="rmdb-searchbar">
-        <div className="rmdb-searchbar-content">
-          <FontAwesome className="rmdb-fa-search fa-2x" name="search"/>
+      <div className="searchbar-wrapper">
+        <div className="searchbar">
+
           <input
             type="text"
-            className="rmdb-searchbar-input"
+            className="searchbar-input"
             placeholder="Search"
             onChange={this.doSearch}
             value={value}

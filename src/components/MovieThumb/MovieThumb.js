@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import './MovieThumb.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
