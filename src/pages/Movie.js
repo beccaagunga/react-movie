@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../config.js'
+import { API_URL, API_KEY } from '../config.js'
 import Nav from '../components/Nav/Nav';
 import MovieInfo from '../components/MovieInfo/MovieInfo';
 import MovieInfoBar from '../components/MovieInfoBar/MovieInfoBar';

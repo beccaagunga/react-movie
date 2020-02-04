@@ -1,6 +1,5 @@
 import React from 'react';
 import './MovieInfo.css';
-import { Link } from 'react-router-dom';
 import { IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../../config.js';
 import MovieThumb from '../MovieThumb/MovieThumb';
 
