@@ -28,7 +28,7 @@ const MovieInfo = (props, movie, directors) => (
         </div>
         {props.directors.length > 1 ? <h3>DIRECTORS</h3> : <h3>DIRECTOR</h3>}
         {props.directors.map( (element, i) => {
-          return <p key={i} className="director">{element.directors}</p>
+          return <p key={i} className="director">{element.name}</p>
         })}
       </div>
 

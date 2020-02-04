@@ -1,5 +1,6 @@
 /* MOVIE INFO */
-. movieinfo {
+
+.movieinfo {
   background-size: cover !important;
   background-position: center !important;
   width: 100%;
@@ -73,12 +74,7 @@
   margin: 0;
 }
 
-.fa-film {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  color: #fff;
-}
+
 
 meter::-webkit-meter-bar {
   background: #fff;
@@ -108,10 +104,6 @@ meter::-webkit-meter-even-less-good-value {
 
   .movieinfo-thumb {
     width: 100% !important;
-  }
-
-  .fa-film {
-    display: none;
   }
 
   .movieinfo-text h1 {

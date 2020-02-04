@@ -1,7 +1,7 @@
 import React from 'react';
 import './Actor.css';
 import { IMAGE_BASE_URL } from '../../config.js'
-import noImage from '../../images/no_image.jpg'
+import { noImage } from '../../images/no_image.jpg'
 import PropTypes from 'prop-types';
 
 const Actor  = ({actor}) => {
@@ -11,7 +11,7 @@ const Actor  = ({actor}) => {
   return (
     <div className="actor">
       <img
-        src={actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` : { noImage } }
+        src={actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` : { noImage }  }
         alt="Actor"
       />
       <span className="actor-name">{actor.name}</span>

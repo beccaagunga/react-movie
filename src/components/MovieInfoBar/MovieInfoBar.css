@@ -34,6 +34,12 @@
   padding: 5px 0 0 10px;
 }
 
+.icon {
+  font-size: 1.5rem;
+  padding: .5rem;
+  color: rgb(233, 156, 40);
+}
+
 @media screen and (max-width: 425px) {
   .movieinfobar {
     font-size: 14px;
@@ -41,13 +47,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .fa-time, .fa-revenue, .fa-budget {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .movieinfobar-content-col {
-
+  .icon {
+    font-size: 1rem;
   }
 }

@@ -4,8 +4,6 @@
 const API_URL = 'https://api.themoviedb.org/3/';
 const API_KEY = '1eadc9c93ae4fefa4fa4eac5bffae184';
 
-
-
 // 019e8f375549e0bbd4a4191862ebc88f
 
 // Images

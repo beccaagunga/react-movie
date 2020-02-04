@@ -20,9 +20,10 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    if (localStorage.getItem('HomeState')) {
-      let state = JSON.parse(localStorage.getItem('HomeState'))
-      this.setState({ ...state })
+    if (sessionStorage.getItem('HomeState')) {
+    // take local storage string and convert it back to state object
+      const state = JSON.parse(sessionStorage.getItem('HomeState'));
+      this.setState({ ...state });
     } else {
     this.setState({ loading: true })
     // URL where we get the data
@@ -75,7 +76,7 @@ class Home extends Component {
         currentPage: result.page,
         totalPages: result.total_pages
       }, () => {
-        // Remember state for the next mount if we're not in search view
+        // LOCAL STORAGE: Remember state for the next mount if we're not in search view
         if (searchTerm === "") {
           sessionStorage.setItem('HomeState', JSON.stringify(this.state));
         }

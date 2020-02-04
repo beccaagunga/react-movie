@@ -37,7 +37,7 @@ class Movie extends Component {
           fetch(endpoint)
           .then(result => result.json())
           .then(result => {
-            const directors = result.crew.filter( (member) => member.job === "Directors");
+            const directors = result.crew.filter( (member) => member.job === "Director");
             this.setState({
               actors: result.cast,
               directors,

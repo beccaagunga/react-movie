@@ -25,7 +25,9 @@ class SearchBar extends Component {
     return (
       <div className="searchbar-wrapper">
         <div className="searchbar">
-
+        <div className="search-icon">
+        <FontAwesomeIcon icon={ faSearch } />
+        </div>
           <input
             type="text"
             className="searchbar-input"
