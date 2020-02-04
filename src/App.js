@@ -11,7 +11,7 @@ import Load from './components/Load/Load';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/react-movie/'>
         <React.Fragment>
           <Header />
             <Switch>
