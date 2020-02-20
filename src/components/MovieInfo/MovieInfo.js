@@ -12,7 +12,7 @@ const MovieInfo = (props, movie, directors) => (
     <div className="movieinfo-content">
       <div className="movieinfo-thumb">
         <MovieThumb
-          image={props.movie.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${props.movie.poster_path}` : './images/no_image.jpg'}
+          image={props.movie.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${props.movie.poster_path}` : '../../images/no_image.jpg'}
           clickable={false}
         />
       </div>

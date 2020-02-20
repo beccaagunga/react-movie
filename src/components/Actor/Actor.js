@@ -11,8 +11,8 @@ const Actor  = ({actor}) => {
   return (
     <div className="actor">
       <img
-        src={actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` : { noImage }  }
-        alt="Actor"
+      src={actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` :  { noImage }  }
+      alt="Actor Thumbnail"
       />
       <span className="actor-name">{actor.name}</span>
       <span className="actor-character">{actor.character}</span>

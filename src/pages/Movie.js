@@ -7,6 +7,7 @@ import MovieInfoBar from '../components/MovieInfoBar/MovieInfoBar';
 import Actor from '../components/Actor/Actor';
 import Grid from '../components/Grid/Grid';
 import Spinner from '../components/Spinner/Spinner';
+import Back from '../components/Back/Back';
 
 
 class Movie extends Component {
@@ -71,6 +72,7 @@ class Movie extends Component {
           return <Actor key={1} actor={element} />
         })}
       </Grid>
+      <Back />
     </div>
       : null }
       {!this.state.actors && !this.state.loading ? <h1>No Movie Found</h1> : null}

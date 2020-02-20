@@ -101,7 +101,7 @@ class Home extends Component {
       </div> : null }
         <div className="home-grid">
           <Grid
-            header={searchTerm ? 'Search Result' : 'Popular Movies'}
+            header={searchTerm ? 'Search Results' : 'Popular Movies'}
             loading={ loading }
           >
           {movies.map( (element, i) => (
